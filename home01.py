@@ -36,4 +36,3 @@ def filter_numbers(*n):
 print(filter_numbers([1, 2, 3,4,5,6,7,8,9,10],PRIME))
 
 pass
-break
