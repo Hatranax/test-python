@@ -34,3 +34,5 @@ def filter_numbers(*n):
         return list(filter(is_prime,n[0]))
 
 print(filter_numbers([1, 2, 3,4,5,6,7,8,9,10],PRIME))
+
+pass
