@@ -1,2 +1,2 @@
 # test-python
-This is gonna be awesome!
+Hey guys, this is a future awesome Python programmer! This is gonna be awesome! We will master this snake!
