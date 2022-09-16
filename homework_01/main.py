@@ -19,6 +19,8 @@ EVEN = "even"
 PRIME = "prime"
 
 def is_prime(a):
+    if a < 2:
+        return False
     f = True
     for i in range(2,a//2+1):
         if a%i == 0:
