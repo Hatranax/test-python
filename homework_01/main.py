@@ -40,9 +40,9 @@ def filter_numbers(n,mode):
     >>> filter_numbers([2, 3, 4, 5], EVEN)
     <<< [2, 4]
     """
-    if mode == 'odd':
+    if mode == ODD:
         return list(filter(lambda i: i % 2 == 1,n))
-    elif mode == 'even':
+    elif mode == EVEN:
         return list(filter(lambda i: i % 2 == 0,n))        
     else:
         return list(filter(is_prime,n))
