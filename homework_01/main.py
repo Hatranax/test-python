@@ -39,8 +39,8 @@ def filter_numbers(n,mode):
     <<< [2, 4]
     """
     if mode == 'odd':
-        return list(filter(lambda i: i % 2 == 1,n[0]))
+        return list(filter(lambda i: i % 2 == 1,n))
     elif mode == 'even':
-        return list(filter(lambda i: i % 2 == 0,n[0]))        
+        return list(filter(lambda i: i % 2 == 0,n))        
     else:
-        return list(filter(is_prime,n[0]))
+        return list(filter(is_prime,n))
