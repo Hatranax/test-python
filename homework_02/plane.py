@@ -9,8 +9,9 @@ class Plane (Vehicle):
     cargo = 0
     max_cargo = 0
 
-    def __init__(self,m_c):
-        max_cargo = m_c
+    def __init__(self,Vweight,VFuel,Vfuel_consumption,Vmax_cargo):
+        super.__Init__(self,Vweight,VFuel,Vfuel_consumption)
+        max_cargo = Vmax_cargo
     
     def load_cargo(cargo_added):
         if cargo+cargo_added > max_cargo:
