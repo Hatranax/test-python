@@ -4,3 +4,6 @@
 - NotEnoughFuel
 - CargoOverload
 """
+
+class CargoOverload(Exception):
+    pass

@@ -1,6 +1,4 @@
 from abc import ABC
-from email.errors import StartBoundaryNotFoundDefect
-
 
 class Vehicle(ABC):
     weight = 0
@@ -12,3 +10,12 @@ class Vehicle(ABC):
         weight = w
         fuel = f
         fuel_consumption_= f_c
+
+    def start():
+        pass
+
+    def move():
+        pass
+
+    
+
