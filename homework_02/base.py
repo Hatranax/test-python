@@ -1,8 +1,5 @@
 from abc import ABC
 
-#import sys
-#sys.path.insert(0,'c:\\Users\\Anastasiya\\HelloWorld\\test-python')
-
 from homework_02.exceptions import LowFuelError, NotEnoughFuel
 
 class Vehicle(ABC):
@@ -25,7 +22,7 @@ class Vehicle(ABC):
 
     def move(self,distance):
         if distance*self.fuel_consumption > self.fuel:
-           raise NotEnoughFuel
+           raise NotEnoughFuel('Not enough fuel!')
         else:
             self.fuel -= distance*self.fuel_consumption
 
