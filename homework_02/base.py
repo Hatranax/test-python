@@ -1,21 +1,33 @@
 from abc import ABC
 
+#import sys
+#sys.path.insert(0,'c:\\Users\\Anastasiya\\HelloWorld\\test-python')
+
+from homework_02.exceptions import LowFuelError, NotEnoughFuel
+
 class Vehicle(ABC):
-    weight = 0
+    weight : int
     started = False
-    fuel = 0
-    fuel_consumption = 0
+    fuel : int
+    fuel_consumption : int
     
-    def __init__(self,w,f,f_c):
-        weight = w
-        fuel = f
-        fuel_consumption_= f_c
+    def __init__(self,Vweight,Vfuel,Vfuel_consumption):
+        self.weight = Vweight
+        self.fuel = Vfuel
+        self.fuel_consumption = Vfuel_consumption
 
-    def start():
-        pass
+    def start(self):
+        if not self.started:
+            if self.fuel > 0:
+                self.started = True
+            else:
+                raise LowFuelError('There is no juice in fuel tank!')
 
-    def move():
-        pass
+    def move(self,distance):
+        if distance*self.fuel_consumption > self.fuel:
+           raise NotEnoughFuel
+        else:
+            self.fuel -= distance*self.fuel_consumption
+
 
     
-
