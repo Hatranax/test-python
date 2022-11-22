@@ -1,5 +1,6 @@
 # Command to build docker container: docker build . -t app
 # Command to run: docker run -it -p 8000:8000 app 
+
 FROM python:3.10.8-bullseye
 ENV PYTHONUNBUFFERED=1
 WORKDIR /MAIN
