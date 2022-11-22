@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-app = FastAPI()
-@app.get("/")
-def read_root():
-    return {"Hello": "World"}
+application = FastAPI()
+@application.get("/ping/")
+def ping_answer():
+    return {"message": "pong"}
